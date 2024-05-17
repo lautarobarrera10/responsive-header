@@ -16,6 +16,10 @@ header {
     padding: 20px;
     background-color: #333;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .logo {
@@ -61,11 +65,14 @@ nav {
         display: flex;
         flex-direction: column;
         width: 100%;
-        position: absolute;
+        height: 100vh;
+        position: fixed;
         top: 80px;
         left: -100%;
         background-color: #333;
         transition: all 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
     }
 
     .nav-links li {
@@ -92,10 +99,14 @@ nav {
     .burger.toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    body.nav-active {
+        overflow: hidden;
+    }
 }
 
 main {
-    padding: 20px;
+    padding: 100px 20px 20px 20px; /* Ajustar padding para el contenido debajo del header fijo */
 }
 
 section {
