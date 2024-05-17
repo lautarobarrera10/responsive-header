@@ -18,3 +18,8 @@ Este proyecto tiene como objetivo implementar un header con un menú hamburguesa
 │   └── styles.css
 └── js/
     └── scripts.js
+```
+## Mejoras Realizadas
+
+- **Menú Responsive**: Aseguramos que el menú hamburguesa se fije en la parte superior y ocupe toda la altura de la pantalla cuando esté abierto.
+- **Deshabilitar Scroll**: Implementamos una funcionalidad para deshabilitar el desplazamiento de la página principal cuando el menú está abierto, proporcionando una mejor experiencia de usuario.
